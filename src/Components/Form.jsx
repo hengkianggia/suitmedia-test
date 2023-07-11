@@ -43,6 +43,7 @@ const Form = () => {
     if (
       enteredName.trim() !== "" &&
       enteredEmail.trim() !== "" &&
+      enteredEmail.includes("@") &&
       enteredMessage.trim() !== ""
     ) {
       setNameErorr(false);
@@ -52,6 +53,8 @@ const Form = () => {
       setEnteredName("");
       setEnteredEmail("");
       setEnteredMessage("");
+
+      window.scrollTo(0, 0);
     }
 
     console.log(enteredName, enteredEmail, enteredMessage);

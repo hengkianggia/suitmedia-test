@@ -12,9 +12,9 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div className="grid place-items-center">
       <div
-        className="w-full overflow-hidden max-h-[114vh] relative"
+        className="w-full overflow-hidden max-h-[114vh] relative max-w-[1400px]"
         id="headerContainer"
       >
         {/* image header */}
@@ -82,7 +82,7 @@ const Header = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

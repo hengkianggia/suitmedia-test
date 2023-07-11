@@ -30,73 +30,74 @@ import { AiOutlineCaretRight } from "react-icons/ai";
 
 const OurValues = () => {
   return (
-    <div className="flex flex-col items-center w-full py-16">
-      <h1 className="text-3xl font-semibold uppercase">our values</h1>
-      <div
-        className="flex justify-between items-center w-[75%] mt-5"
-        id="containerItem"
-      >
-        <div className="w-[31.5%] flex items-center relative" id="item">
-          <div
-            className={`w-[100%] flex flex-col items-center px-5 py-8 bg-red-400 gap-3 text-white`}
-          >
-            <span>
-              <img src={lightbulb} alt="lightbulb" className={`h-10 w-5`} />
-            </span>
-            <h1 className="text-xl font-semibold">INNOVATIVE</h1>
-            <p className="text-sm text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae quis natus autem nisi magnam dolorem maxime vitae, eum
-              consectetur quibusdam.
-            </p>
+    <div className="grid place-items-center">
+      <div className="flex flex-col items-center w-full py-16 max-w-[1400px]">
+        <h1 className="text-3xl font-semibold uppercase">our values</h1>
+        <div
+          className="flex justify-between items-center w-[75%] mt-5"
+          id="containerItem"
+        >
+          <div className="w-[31.5%] flex items-center relative" id="item">
+            <div
+              className={`w-[100%] flex flex-col items-center px-5 py-8 bg-red-400 gap-3 text-white`}
+            >
+              <span>
+                <img src={lightbulb} alt="lightbulb" className={`h-10 w-5`} />
+              </span>
+              <h1 className="text-xl font-semibold">INNOVATIVE</h1>
+              <p className="text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae quis natus autem nisi magnam dolorem maxime vitae,
+                eum consectetur quibusdam.
+              </p>
+            </div>
+            <div
+              className={`text-4xl -z-10 text-red-400 absolute -right-6`}
+              id="right"
+            >
+              <AiOutlineCaretRight />
+            </div>
           </div>
-          <div
-            className={`text-4xl -z-10 text-red-400 absolute -right-6`}
-            id="right"
-          >
-            <AiOutlineCaretRight />
-          </div>
-        </div>
 
-        <div className="w-[31.5%] flex items-center relative" id="item">
-          <div
-            className={`w-[100%] flex flex-col items-center px-5 py-8 bg-green-400 gap-3 text-white`}
-          >
-            <span>
-              <img src={bank} alt="LOYALTY" className={`h-10 w-10`} />
-            </span>
-            <h1 className="text-xl font-semibold">LOYALTY</h1>
-            <p className="text-sm text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae quis natus autem nisi magnam dolorem maxime vitae, eum
-              consectetur quibusdam.
-            </p>
+          <div className="w-[31.5%] flex items-center relative" id="item">
+            <div
+              className={`w-[100%] flex flex-col items-center px-5 py-8 bg-green-400 gap-3 text-white`}
+            >
+              <span>
+                <img src={bank} alt="LOYALTY" className={`h-10 w-10`} />
+              </span>
+              <h1 className="text-xl font-semibold">LOYALTY</h1>
+              <p className="text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae quis natus autem nisi magnam dolorem maxime vitae,
+                eum consectetur quibusdam.
+              </p>
+            </div>
+            <div
+              className={`text-4xl -z-10 text-green-400 absolute -right-6`}
+              id="right"
+            >
+              <AiOutlineCaretRight />
+            </div>
           </div>
-          <div
-            className={`text-4xl -z-10 text-green-400 absolute -right-6`}
-            id="right"
-          >
-            <AiOutlineCaretRight />
-          </div>
-        </div>
 
-        <div className="w-[31.5%] flex items-center relative" id="item">
-          <div
-            className={`w-[100%] flex flex-col items-center px-5 py-8 bg-blue-400 gap-3 text-white`}
-          >
-            <span>
-              <img src={balance} alt="LOYALTY" className={`h-10 w-10`} />
-            </span>
-            <h1 className="text-xl font-semibold">RESPECT</h1>
-            <p className="text-sm text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae quis natus autem nisi magnam dolorem maxime vitae, eum
-              consectetur quibusdam.
-            </p>
+          <div className="w-[31.5%] flex items-center relative" id="item">
+            <div
+              className={`w-[100%] flex flex-col items-center px-5 py-8 bg-blue-400 gap-3 text-white`}
+            >
+              <span>
+                <img src={balance} alt="LOYALTY" className={`h-10 w-10`} />
+              </span>
+              <h1 className="text-xl font-semibold">RESPECT</h1>
+              <p className="text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae quis natus autem nisi magnam dolorem maxime vitae,
+                eum consectetur quibusdam.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* {dataItem.map((item, index) => (
+          {/* {dataItem.map((item, index) => (
           <ValuesItemm
             key={index}
             title={item.title}
@@ -106,6 +107,7 @@ const OurValues = () => {
             warna={item.warna}
           />
         ))} */}
+        </div>
       </div>
     </div>
   );
