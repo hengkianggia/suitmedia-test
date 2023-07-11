@@ -11,24 +11,24 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-between px-40 items-center h-14">
+    <div className="flex items-center justify-between w-full px-40 h-14">
       <span>
-        <h1 className="font-semibold text-2xl">Company</h1>
+        <h1 className="text-2xl font-bold">Company</h1>
       </span>
 
       <div className="h-full">
-        <ul className="flex text-sm h-full">
+        <ul className="flex h-full text-sm">
           <div
             className="relative"
             onMouseEnter={enterSubmenuHandler}
             onMouseLeave={leaveSubmenuHandler}
           >
-            <li className="hover:bg-gray-100 grid place-items-center cursor-pointer mx-2 h-full px-4 text-center">
+            <li className="grid h-full px-4 mx-2 text-center cursor-pointer hover:bg-gray-100 place-items-center">
               ABOUT
             </li>
             {showSubmenu ? (
-              <div className="absolute left-2 z-10">
-                <ul className="w-60 bg-white flex flex-col">
+              <div className="absolute z-10 left-2">
+                <ul className="flex flex-col bg-white w-60">
                   <li className="px-3 py-3 cursor-pointer hover:bg-gray-800 hover:text-white">
                     HISTORY
                   </li>
@@ -41,13 +41,13 @@ const Navbar = () => {
               ""
             )}
           </div>
-          <li className="hover:bg-gray-100 grid place-items-center cursor-pointer mx-2 h-full px-4">
+          <li className="grid h-full px-4 mx-2 cursor-pointer hover:bg-gray-100 place-items-center">
             OUR WORK
           </li>
-          <li className="hover:bg-gray-100 grid place-items-center cursor-pointer mx-2 h-full px-4">
+          <li className="grid h-full px-4 mx-2 cursor-pointer hover:bg-gray-100 place-items-center">
             OUR TEAM
           </li>
-          <li className="hover:bg-gray-100 grid place-items-center cursor-pointer mx-2 h-full px-4">
+          <li className="grid h-full px-4 mx-2 cursor-pointer hover:bg-gray-100 place-items-center">
             OUR CONTACT
           </li>
         </ul>

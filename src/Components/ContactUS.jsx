@@ -3,8 +3,8 @@ import Form from "./Form";
 
 const ContactUS = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-5 py-8">
-      <h1 className="font-semibold text-3xl">CONTACT US</h1>
+    <div className="flex flex-col items-center w-full gap-5 py-8">
+      <h1 className="text-3xl font-semibold">CONTACT US</h1>
       <Form />
     </div>
   );

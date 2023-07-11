@@ -17,10 +17,9 @@
     /* membuat styling pada batang atau bar scrollbar  */
     /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
     ::-webkit-scrollbar-thumb {
-      background-color: #ff0000;
+      background-color: #868686;
       border-radius: 20px;
       border: 6px solid transparent;
-      background-clip: content-box;
     }
 
     /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */

@@ -38,7 +38,7 @@ const OurValues = () => {
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-red-400 gap-3 text-white`}
           >
             <span>
-              <img src={lightbulb} alt="lightbulb" className={`h-10 w-7`} />
+              <img src={lightbulb} alt="lightbulb" className={`h-10 w-5`} />
             </span>
             <h1 className="text-xl font-semibold">INNOVATIVE</h1>
             <p className="text-sm text-center">
@@ -57,7 +57,7 @@ const OurValues = () => {
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-green-400 gap-3 text-white`}
           >
             <span>
-              <img src={bank} alt="LOYALTY" className={`h-10 w-7`} />
+              <img src={bank} alt="LOYALTY" className={`h-10 w-10`} />
             </span>
             <h1 className="text-xl font-semibold">LOYALTY</h1>
             <p className="text-sm text-center">
@@ -76,7 +76,7 @@ const OurValues = () => {
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-blue-400 gap-3 text-white`}
           >
             <span>
-              <img src={balance} alt="LOYALTY" className={`h-10 w-7`} />
+              <img src={balance} alt="LOYALTY" className={`h-10 w-10`} />
             </span>
             <h1 className="text-xl font-semibold">RESPECT</h1>
             <p className="text-sm text-center">

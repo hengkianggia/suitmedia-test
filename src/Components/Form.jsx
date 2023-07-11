@@ -79,7 +79,7 @@ const Form = () => {
             placeholder="Masukkan Nama"
           />
           {nameErorr ? (
-            <p className="text-red-400">This field is required</p>
+            <p className="text-sm text-red-400">This field is required</p>
           ) : (
             ""
           )}
@@ -101,7 +101,7 @@ const Form = () => {
             placeholder="Masukkan Email"
           />
           {emailErorr ? (
-            <p className="text-red-400">Invalid email address</p>
+            <p className="text-sm text-red-400">Invalid email address</p>
           ) : (
             ""
           )}
@@ -116,18 +116,18 @@ const Form = () => {
             onChange={messageInputChangehandler}
             className={
               messageErorr
-                ? `border border-red-400 px-3 py-2`
-                : `border px-3 py-2`
+                ? `border border-red-400 px-3 py-2 min-h-[120px]`
+                : `border px-3 py-2 min-h-[120px]`
             }
             placeholder="Masukkan Email"
           />
           {messageErorr ? (
-            <p className="text-red-400">This field is required</p>
+            <p className="text-sm text-red-400">This field is required</p>
           ) : (
             ""
           )}
         </div>
-        <button className="uppercase py-2 bg-blue-500 w-full text-white font-semibold">
+        <button className="w-full py-2 font-semibold text-white uppercase bg-blue-500">
           Submit
         </button>
       </form>
