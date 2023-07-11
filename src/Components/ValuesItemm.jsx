@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
-const ValuesItemm = ({ image, title, right, className, warna, text }) => {
+const ValuesItemm = ({ image, title, right, className, warna}) => {
   return (
     <div className="w-[31.5%] flex items-center relative">
       <div
@@ -11,7 +11,7 @@ const ValuesItemm = ({ image, title, right, className, warna, text }) => {
           <img src={image} alt={title} className={`h-10 ${className} w-10`} />
         </span>
         <h1 className="text-xl font-semibold">{title}</h1>
-        <p className="text-center text-sm">
+        <p className="text-sm text-center">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
           quis natus autem nisi magnam dolorem maxime vitae, eum consectetur
           quibusdam.

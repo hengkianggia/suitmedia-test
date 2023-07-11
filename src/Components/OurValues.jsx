@@ -28,7 +28,7 @@ const dataItem = [
 
 const OurValues = () => {
   return (
-    <div className="w-full py-16 flex flex-col items-center">
+    <div className="flex flex-col items-center w-full py-16">
       <h1 className="text-3xl font-semibold uppercase">our values</h1>
       <div className="flex justify-between items-center w-[75%] mt-5">
         {dataItem.map((item, index) => (
