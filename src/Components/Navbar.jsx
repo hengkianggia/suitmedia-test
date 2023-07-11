@@ -11,12 +11,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between w-full px-40 h-14">
+    <div className="flex items-center justify-between w-full px-40 h-14" id="navContainer">
       <span>
         <h1 className="text-2xl font-bold">Company</h1>
       </span>
 
-      <div className="h-full">
+      <div className="h-full" id="menu">
         <ul className="flex h-full text-sm">
           <div
             className="relative"

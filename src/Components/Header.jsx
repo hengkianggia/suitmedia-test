@@ -13,7 +13,10 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full overflow-hidden max-h-[114vh] bg-orange-400 relative">
+      <div
+        className="w-full overflow-hidden max-h-[114vh] relative"
+        id="headerContainer"
+      >
         {/* image header */}
         {showImage ? (
           <div className="w-full h-full relative">
@@ -22,7 +25,10 @@ const Header = () => {
               alt="Header Image"
               className="w-full h-full object-cover object-center"
             />
-            <div className="py-4 pl-3 pr-8 bg-black bg-opacity-50 absolute bottom-24 left-40 text-white">
+            <div
+              className="py-4 pl-3 pr-8 bg-black bg-opacity-50 absolute bottom-24 left-40 text-white"
+              id="headerDesc"
+            >
               <p className="text-2xl font-bold">
                 THIS IS A PLACE WHERE TECHNOLOGY & <br /> CREATIVITY FUSED INTO
                 DIGITAL CHEMISTRY
@@ -36,7 +42,10 @@ const Header = () => {
               alt="Header Image"
               className="w-full h-full object-cover object-center"
             />
-            <div className="py-4 pl-3 pr-8 bg-black bg-opacity-50 absolute bottom-24 left-40 text-white">
+            <div
+              className="py-4 pl-3 pr-8 bg-black bg-opacity-50 absolute bottom-24 left-40 text-white"
+              id="headerDesc"
+            >
               <p className="text-2xl font-bold">
                 WE DON'T HAVE THE BEST BUT WE HAVE THE <br /> GREATEST TEAM
               </p>

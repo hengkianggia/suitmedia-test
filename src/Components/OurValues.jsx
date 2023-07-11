@@ -32,8 +32,11 @@ const OurValues = () => {
   return (
     <div className="flex flex-col items-center w-full py-16">
       <h1 className="text-3xl font-semibold uppercase">our values</h1>
-      <div className="flex justify-between items-center w-[75%] mt-5">
-        <div className="w-[31.5%] flex items-center relative">
+      <div
+        className="flex justify-between items-center w-[75%] mt-5"
+        id="containerItem"
+      >
+        <div className="w-[31.5%] flex items-center relative" id="item">
           <div
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-red-400 gap-3 text-white`}
           >
@@ -47,12 +50,15 @@ const OurValues = () => {
               consectetur quibusdam.
             </p>
           </div>
-          <div className={`text-4xl -z-10 text-red-400 absolute -right-6`}>
+          <div
+            className={`text-4xl -z-10 text-red-400 absolute -right-6`}
+            id="right"
+          >
             <AiOutlineCaretRight />
           </div>
         </div>
 
-        <div className="w-[31.5%] flex items-center relative">
+        <div className="w-[31.5%] flex items-center relative" id="item">
           <div
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-green-400 gap-3 text-white`}
           >
@@ -66,12 +72,15 @@ const OurValues = () => {
               consectetur quibusdam.
             </p>
           </div>
-          <div className={`text-4xl -z-10 text-green-400 absolute -right-6`}>
+          <div
+            className={`text-4xl -z-10 text-green-400 absolute -right-6`}
+            id="right"
+          >
             <AiOutlineCaretRight />
           </div>
         </div>
 
-        <div className="w-[31.5%] flex items-center relative">
+        <div className="w-[31.5%] flex items-center relative" id="item">
           <div
             className={`w-[100%] flex flex-col items-center px-5 py-8 bg-blue-400 gap-3 text-white`}
           >

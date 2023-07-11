@@ -17,7 +17,7 @@ const Form = () => {
   };
   const emailInputChangehandler = (event) => {
     setEnteredEmail(event.target.value);
-    if (enteredEmail.trim() !== "") {
+    if (enteredEmail.includes("@")) {
       setEmailErorr(false);
     }
   };
@@ -34,7 +34,7 @@ const Form = () => {
     if (enteredName.trim() === "") {
       setNameErorr(true);
     }
-    if (enteredEmail.trim() === "") {
+    if (enteredEmail.trim() === "" || !enteredEmail.includes("@")) {
       setEmailErorr(true);
     }
     if (enteredMessage.trim() === "") {
@@ -63,6 +63,7 @@ const Form = () => {
         action="submit"
         className="w-[40%] space-y-3"
         onSubmit={submitHandler}
+        id="form"
       >
         <div className="flex flex-col gap-1">
           <label htmlFor="name" className="font-semibold">

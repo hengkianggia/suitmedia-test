@@ -2,27 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-    /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-    /* membuat background dari scrollbar */
-    /* kasih warna transparan agar lebih estetik  */
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 
-  
-    /* membuat styling pada batang atau bar scrollbar  */
-    /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
-    ::-webkit-scrollbar-thumb {
-      background-color: #868686;
-      border-radius: 20px;
-      border: 6px solid transparent;
-    }
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+::-webkit-scrollbar-thumb {
+  background-color: #868686;
+  border-radius: 20px;
+  border: 6px solid transparent;
+}
 
-    /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #686868;
-    }
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #686868;
+}
+
+@layer base {
+}
+
+@layer components {
+  /* navbar */
+  #navContainer {
+    @apply max-sm:px-4 max-sm:justify-center max-tab:px-10
+  }
+
+  /* header */
+  #headerContainer {
+    @apply max-sm:h-screen
+  }
+
+  #headerDesc {
+    @apply max-sm:left-5 max-sm:bottom-20 max-sm:pr-3
+  }
+
+  #menu {
+    @apply max-sm:hidden;
+  }
+
+  /* our values */
+  #containerItem {
+    @apply max-sm:flex-col max-sm:w-[80%] max-sm:gap-5 max-tab:w-[95%];
+  }
+  #item {
+    @apply max-sm:w-full;
+  }
+  #right {
+    @apply max-sm:hidden
+  }
+
+  /* contact us */
+  #form {
+    @apply max-sm:w-[90%] max-tab:w-[70%];
+  }
+}
